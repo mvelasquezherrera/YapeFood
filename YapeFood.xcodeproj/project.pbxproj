@@ -23,6 +23,24 @@
 		2F5F691129B453E300A6FE54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691029B453E300A6FE54 /* Constants.swift */; };
 		2F5F691229B453E300A6FE54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691029B453E300A6FE54 /* Constants.swift */; };
 		2F5F691329B453E300A6FE54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691029B453E300A6FE54 /* Constants.swift */; };
+		2F5F691829B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691729B4543000A6FE54 /* FoodInteractorProtocol.swift */; };
+		2F5F691929B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691729B4543000A6FE54 /* FoodInteractorProtocol.swift */; };
+		2F5F691A29B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691729B4543000A6FE54 /* FoodInteractorProtocol.swift */; };
+		2F5F691C29B4544100A6FE54 /* FoodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691B29B4544100A6FE54 /* FoodInteractor.swift */; };
+		2F5F691D29B4544100A6FE54 /* FoodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691B29B4544100A6FE54 /* FoodInteractor.swift */; };
+		2F5F691E29B4544100A6FE54 /* FoodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691B29B4544100A6FE54 /* FoodInteractor.swift */; };
+		2F5F692029B4545200A6FE54 /* FoodRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691F29B4545200A6FE54 /* FoodRepositoryProtocol.swift */; };
+		2F5F692129B4545200A6FE54 /* FoodRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691F29B4545200A6FE54 /* FoodRepositoryProtocol.swift */; };
+		2F5F692229B4545200A6FE54 /* FoodRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691F29B4545200A6FE54 /* FoodRepositoryProtocol.swift */; };
+		2F5F692429B4546000A6FE54 /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F692329B4546000A6FE54 /* FoodRepository.swift */; };
+		2F5F692529B4546000A6FE54 /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F692329B4546000A6FE54 /* FoodRepository.swift */; };
+		2F5F692629B4546000A6FE54 /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F692329B4546000A6FE54 /* FoodRepository.swift */; };
+		2F5F692829B4547000A6FE54 /* FoodDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F692729B4547000A6FE54 /* FoodDataSourceProtocol.swift */; };
+		2F5F692929B4547000A6FE54 /* FoodDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F692729B4547000A6FE54 /* FoodDataSourceProtocol.swift */; };
+		2F5F692A29B4547000A6FE54 /* FoodDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F692729B4547000A6FE54 /* FoodDataSourceProtocol.swift */; };
+		2F5F692C29B4549B00A6FE54 /* FoodDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F692B29B4549B00A6FE54 /* FoodDataSource.swift */; };
+		2F5F692D29B4549B00A6FE54 /* FoodDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F692B29B4549B00A6FE54 /* FoodDataSource.swift */; };
+		2F5F692E29B4549B00A6FE54 /* FoodDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F692B29B4549B00A6FE54 /* FoodDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +76,12 @@
 		2F5F68F629B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2F5F690C29B453B900A6FE54 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		2F5F691029B453E300A6FE54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2F5F691729B4543000A6FE54 /* FoodInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInteractorProtocol.swift; sourceTree = "<group>"; };
+		2F5F691B29B4544100A6FE54 /* FoodInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInteractor.swift; sourceTree = "<group>"; };
+		2F5F691F29B4545200A6FE54 /* FoodRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepositoryProtocol.swift; sourceTree = "<group>"; };
+		2F5F692329B4546000A6FE54 /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
+		2F5F692729B4547000A6FE54 /* FoodDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataSourceProtocol.swift; sourceTree = "<group>"; };
+		2F5F692B29B4549B00A6FE54 /* FoodDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +175,7 @@
 		2F5F690729B4536700A6FE54 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				2F5F691429B4541500A6FE54 /* Interactor */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -158,6 +183,8 @@
 		2F5F690829B4536A00A6FE54 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2F5F691629B4542100A6FE54 /* DataSource */,
+				2F5F691529B4541C00A6FE54 /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -185,6 +212,33 @@
 				2F5F690C29B453B900A6FE54 /* Food.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2F5F691429B4541500A6FE54 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2F5F691729B4543000A6FE54 /* FoodInteractorProtocol.swift */,
+				2F5F691B29B4544100A6FE54 /* FoodInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2F5F691529B4541C00A6FE54 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2F5F691F29B4545200A6FE54 /* FoodRepositoryProtocol.swift */,
+				2F5F692329B4546000A6FE54 /* FoodRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2F5F691629B4542100A6FE54 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2F5F692729B4547000A6FE54 /* FoodDataSourceProtocol.swift */,
+				2F5F692B29B4549B00A6FE54 /* FoodDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,10 +378,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5F692429B4546000A6FE54 /* FoodRepository.swift in Sources */,
+				2F5F692C29B4549B00A6FE54 /* FoodDataSource.swift in Sources */,
+				2F5F691829B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */,
+				2F5F692029B4545200A6FE54 /* FoodRepositoryProtocol.swift in Sources */,
+				2F5F691C29B4544100A6FE54 /* FoodInteractor.swift in Sources */,
 				2F5F691129B453E300A6FE54 /* Constants.swift in Sources */,
 				2F5F68D829B4522900A6FE54 /* ViewController.swift in Sources */,
 				2F5F690D29B453B900A6FE54 /* Food.swift in Sources */,
 				2F5F68D429B4522900A6FE54 /* AppDelegate.swift in Sources */,
+				2F5F692829B4547000A6FE54 /* FoodDataSourceProtocol.swift in Sources */,
 				2F5F68D629B4522900A6FE54 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +396,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5F691929B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */,
 				2F5F68EB29B4522B00A6FE54 /* YapeFoodTests.swift in Sources */,
+				2F5F692D29B4549B00A6FE54 /* FoodDataSource.swift in Sources */,
+				2F5F691D29B4544100A6FE54 /* FoodInteractor.swift in Sources */,
+				2F5F692529B4546000A6FE54 /* FoodRepository.swift in Sources */,
+				2F5F692929B4547000A6FE54 /* FoodDataSourceProtocol.swift in Sources */,
+				2F5F692129B4545200A6FE54 /* FoodRepositoryProtocol.swift in Sources */,
 				2F5F690E29B453B900A6FE54 /* Food.swift in Sources */,
 				2F5F691229B453E300A6FE54 /* Constants.swift in Sources */,
 			);
@@ -347,9 +413,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F5F68F729B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift in Sources */,
+				2F5F692229B4545200A6FE54 /* FoodRepositoryProtocol.swift in Sources */,
+				2F5F692A29B4547000A6FE54 /* FoodDataSourceProtocol.swift in Sources */,
 				2F5F68F529B4522B00A6FE54 /* YapeFoodUITests.swift in Sources */,
+				2F5F691E29B4544100A6FE54 /* FoodInteractor.swift in Sources */,
 				2F5F690F29B453B900A6FE54 /* Food.swift in Sources */,
 				2F5F691329B453E300A6FE54 /* Constants.swift in Sources */,
+				2F5F691A29B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */,
+				2F5F692E29B4549B00A6FE54 /* FoodDataSource.swift in Sources */,
+				2F5F692629B4546000A6FE54 /* FoodRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
