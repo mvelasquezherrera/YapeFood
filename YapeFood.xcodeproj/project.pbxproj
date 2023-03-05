@@ -101,12 +101,15 @@
 		2F5F68D229B4522900A6FE54 /* YapeFood */ = {
 			isa = PBXGroup;
 			children = (
+				2F5F690B29B4537A00A6FE54 /* Model */,
+				2F5F690A29B4537600A6FE54 /* View */,
+				2F5F690929B4537200A6FE54 /* Controller */,
+				2F5F690829B4536A00A6FE54 /* Data */,
+				2F5F690729B4536700A6FE54 /* Domain */,
+				2F5F690629B4536300A6FE54 /* Utils */,
 				2F5F68D329B4522900A6FE54 /* AppDelegate.swift */,
 				2F5F68D529B4522900A6FE54 /* SceneDelegate.swift */,
-				2F5F68D729B4522900A6FE54 /* ViewController.swift */,
-				2F5F68D929B4522900A6FE54 /* Main.storyboard */,
 				2F5F68DC29B4522B00A6FE54 /* Assets.xcassets */,
-				2F5F68DE29B4522B00A6FE54 /* LaunchScreen.storyboard */,
 				2F5F68E129B4522B00A6FE54 /* Info.plist */,
 			);
 			path = YapeFood;
@@ -127,6 +130,51 @@
 				2F5F68F629B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift */,
 			);
 			path = YapeFoodUITests;
+			sourceTree = "<group>";
+		};
+		2F5F690629B4536300A6FE54 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2F5F690729B4536700A6FE54 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2F5F690829B4536A00A6FE54 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2F5F690929B4537200A6FE54 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F5F68D729B4522900A6FE54 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F5F690A29B4537600A6FE54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F5F68D929B4522900A6FE54 /* Main.storyboard */,
+				2F5F68DE29B4522B00A6FE54 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F5F690B29B4537A00A6FE54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
