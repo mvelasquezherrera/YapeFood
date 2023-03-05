@@ -16,6 +16,7 @@
 		2F5F68EB29B4522B00A6FE54 /* YapeFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68EA29B4522B00A6FE54 /* YapeFoodTests.swift */; };
 		2F5F68F529B4522B00A6FE54 /* YapeFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68F429B4522B00A6FE54 /* YapeFoodUITests.swift */; };
 		2F5F68F729B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68F629B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift */; };
+		2F5F690529B4531400A6FE54 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2F5F690429B4531400A6FE54 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5F690529B4531400A6FE54 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = YapeFood;
+			packageProductDependencies = (
+				2F5F690429B4531400A6FE54 /* SDWebImage */,
+			);
 			productName = YapeFood;
 			productReference = 2F5F68D029B4522900A6FE54 /* YapeFood.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 2F5F68C729B4522900A6FE54;
+			packageReferences = (
+				2F5F690329B4531400A6FE54 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 2F5F68D129B4522900A6FE54 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F5F690329B4531400A6FE54 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F5F690429B4531400A6FE54 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F5F690329B4531400A6FE54 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F5F68C829B4522900A6FE54 /* Project object */;
 }
