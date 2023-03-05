@@ -17,6 +17,9 @@
 		2F5F68F529B4522B00A6FE54 /* YapeFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68F429B4522B00A6FE54 /* YapeFoodUITests.swift */; };
 		2F5F68F729B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68F629B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift */; };
 		2F5F690529B4531400A6FE54 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2F5F690429B4531400A6FE54 /* SDWebImage */; };
+		2F5F690D29B453B900A6FE54 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F690C29B453B900A6FE54 /* Food.swift */; };
+		2F5F690E29B453B900A6FE54 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F690C29B453B900A6FE54 /* Food.swift */; };
+		2F5F690F29B453B900A6FE54 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F690C29B453B900A6FE54 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,7 @@
 		2F5F68F029B4522B00A6FE54 /* YapeFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YapeFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5F68F429B4522B00A6FE54 /* YapeFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeFoodUITests.swift; sourceTree = "<group>"; };
 		2F5F68F629B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F5F690C29B453B900A6FE54 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,7 @@
 		2F5F690B29B4537A00A6FE54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2F5F690C29B453B900A6FE54 /* Food.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F5F68D829B4522900A6FE54 /* ViewController.swift in Sources */,
+				2F5F690D29B453B900A6FE54 /* Food.swift in Sources */,
 				2F5F68D429B4522900A6FE54 /* AppDelegate.swift in Sources */,
 				2F5F68D629B4522900A6FE54 /* SceneDelegate.swift in Sources */,
 			);
@@ -325,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F5F68EB29B4522B00A6FE54 /* YapeFoodTests.swift in Sources */,
+				2F5F690E29B453B900A6FE54 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +341,7 @@
 			files = (
 				2F5F68F729B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift in Sources */,
 				2F5F68F529B4522B00A6FE54 /* YapeFoodUITests.swift in Sources */,
+				2F5F690F29B453B900A6FE54 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
