@@ -20,6 +20,9 @@
 		2F5F690D29B453B900A6FE54 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F690C29B453B900A6FE54 /* Food.swift */; };
 		2F5F690E29B453B900A6FE54 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F690C29B453B900A6FE54 /* Food.swift */; };
 		2F5F690F29B453B900A6FE54 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F690C29B453B900A6FE54 /* Food.swift */; };
+		2F5F691129B453E300A6FE54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691029B453E300A6FE54 /* Constants.swift */; };
+		2F5F691229B453E300A6FE54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691029B453E300A6FE54 /* Constants.swift */; };
+		2F5F691329B453E300A6FE54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F691029B453E300A6FE54 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,7 @@
 		2F5F68F429B4522B00A6FE54 /* YapeFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeFoodUITests.swift; sourceTree = "<group>"; };
 		2F5F68F629B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapeFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2F5F690C29B453B900A6FE54 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		2F5F691029B453E300A6FE54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		2F5F690629B4536300A6FE54 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2F5F691029B453E300A6FE54 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5F691129B453E300A6FE54 /* Constants.swift in Sources */,
 				2F5F68D829B4522900A6FE54 /* ViewController.swift in Sources */,
 				2F5F690D29B453B900A6FE54 /* Food.swift in Sources */,
 				2F5F68D429B4522900A6FE54 /* AppDelegate.swift in Sources */,
@@ -332,6 +338,7 @@
 			files = (
 				2F5F68EB29B4522B00A6FE54 /* YapeFoodTests.swift in Sources */,
 				2F5F690E29B453B900A6FE54 /* Food.swift in Sources */,
+				2F5F691229B453E300A6FE54 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +349,7 @@
 				2F5F68F729B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift in Sources */,
 				2F5F68F529B4522B00A6FE54 /* YapeFoodUITests.swift in Sources */,
 				2F5F690F29B453B900A6FE54 /* Food.swift in Sources */,
+				2F5F691329B453E300A6FE54 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
