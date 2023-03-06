@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="HomeFoodTableViewCell" customModule="YapeFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJj-uk-WuG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4HO-9z-Wo7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HLT-Mh-p9Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HLT-Mh-p9Q" secondAttribute="height" multiplier="1:1" id="Hhg-Kb-gZM"/>
+                                            <constraint firstAttribute="height" constant="100" id="gHU-NN-agy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSB-0v-23l">
+                                        <rect key="frame" x="108" y="40" width="212" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="HLT-Mh-p9Q" secondAttribute="bottom" id="9hp-Fy-PjG"/>
+                                    <constraint firstItem="HLT-Mh-p9Q" firstAttribute="top" secondItem="4HO-9z-Wo7" secondAttribute="top" id="cs8-0I-GA3"/>
+                                    <constraint firstItem="HLT-Mh-p9Q" firstAttribute="leading" secondItem="4HO-9z-Wo7" secondAttribute="leading" id="kjq-ai-3IX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4HO-9z-Wo7" secondAttribute="trailing" id="Agr-nv-mUV"/>
+                            <constraint firstAttribute="bottom" secondItem="4HO-9z-Wo7" secondAttribute="bottom" id="Deu-o0-iML"/>
+                            <constraint firstItem="4HO-9z-Wo7" firstAttribute="top" secondItem="DJj-uk-WuG" secondAttribute="top" id="JNJ-qm-c8z"/>
+                            <constraint firstItem="4HO-9z-Wo7" firstAttribute="leading" secondItem="DJj-uk-WuG" secondAttribute="leading" id="f2Z-Md-QkO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DJj-uk-WuG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="98T-gq-y3c"/>
+                    <constraint firstItem="DJj-uk-WuG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Sbp-II-Fmh"/>
+                    <constraint firstAttribute="trailing" secondItem="DJj-uk-WuG" secondAttribute="trailing" id="h09-OI-auQ"/>
+                    <constraint firstAttribute="bottom" secondItem="DJj-uk-WuG" secondAttribute="bottom" id="j7r-y1-89D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgFood" destination="HLT-Mh-p9Q" id="KKa-Ln-2Jf"/>
+                <outlet property="lblFood" destination="lSB-0v-23l" id="33k-cJ-v1f"/>
+                <outlet property="viewContent" destination="DJj-uk-WuG" id="sxI-08-iUM"/>
+            </connections>
+            <point key="canvasLocation" x="80.916030534351137" y="38.028169014084511"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

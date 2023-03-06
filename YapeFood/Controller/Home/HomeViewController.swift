@@ -12,9 +12,15 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var tableFoods: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    let searchController = UISearchController(searchResultsController: nil)
+    
     let interactor = FoodInteractor(foodRepository: FoodRepository())
     
     var listFoods = [FoodCategory]()
+    var listFoodsOneSection = [Foods]()
+    var filterListFoods = [Foods]()
+    
+    var searching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +39,7 @@ extension HomeViewController {
     
     func setupView() {
         setupNavigationController()
+        setupSearchController()
         setupTable()
     }
     
@@ -41,10 +48,32 @@ extension HomeViewController {
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
+    func setupSearchController() {
+        searchController.loadViewIfNeeded()
+        if #available(iOS 13.0, *) {
+            searchController.searchBar.searchTextField.backgroundColor = .white
+        } else {
+            // Fallback on earlier versions
+        }
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.enablesReturnKeyAutomatically = false
+        searchController.searchBar.returnKeyType = UIReturnKeyType.done
+        self.navigationItem.searchController = searchController
+        self.navigationItem.hidesSearchBarWhenScrolling = true
+        definesPresentationContext = true
+        searchController.searchBar.placeholder = "Busque una comida"
+        searchController.hidesNavigationBarDuringPresentation = false
+        view.endEditing(true)
+        
+    }
+    
     func setupTable() {
         tableFoods.delegate = self
         tableFoods.dataSource = self
         tableFoods.register(HomeTableViewCell.nib(), forCellReuseIdentifier: HomeTableViewCell.identifier)
+        tableFoods.register(HomeFoodTableViewCell.nib(), forCellReuseIdentifier: HomeFoodTableViewCell.identifier)
         tableFoods.rowHeight = 100
         tableFoods.estimatedRowHeight = 100
         tableFoods.showsHorizontalScrollIndicator = false
@@ -75,10 +104,19 @@ extension HomeViewController {
     }
     
     func getListFoods() {
+        searching = false
+        searchController.searchBar.text = ""
         self.showSpinner()
         interactor.getListFoods { listFoods in
             self.hideSpinner()
             self.listFoods = listFoods
+            self.listFoodsOneSection.removeAll()
+            self.filterListFoods.removeAll()
+            for foods in listFoods {
+                self.listFoodsOneSection.append(contentsOf: foods.foods)
+                self.filterListFoods.append(contentsOf: foods.foods)
+            }
+
             DispatchQueue.main.async {
                 self.tableFoods.reloadData()
             }
@@ -103,11 +141,19 @@ extension HomeViewController {
     }
     
     func getNumberOfSections() -> Int {
-        return listFoods.count
+        if searching {
+            return 1
+        } else {
+            return listFoods.count
+        }
     }
     
     func getNumberOfRowsPerSections() -> Int {
-        return 1
+        if searching {
+            return filterListFoods.count
+        } else {
+            return 1
+        }
     }
     
     func createCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
@@ -119,13 +165,61 @@ extension HomeViewController {
         return cell
     }
     
+    func createCellFilter(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomeFoodTableViewCell.identifier, for: indexPath) as! HomeFoodTableViewCell
+        cell.selectionStyle = .none
+        cell.setupCell(nameImg: filterListFoods[indexPath.row].image, nameFood: filterListFoods[indexPath.row].name)
+        return cell
+    }
+    
+    func updateSearchResultsTable(searchText: String) {
+        if !searchText.isEmpty {
+            searching = true
+            filterListFoods.removeAll()
+            for item in listFoodsOneSection {
+                if item.name.lowercased().contains(searchText.lowercased()) {
+                    filterListFoods.append(item)
+                }
+            }
+        } else {
+            searching = false
+            filterListFoods.removeAll()
+            filterListFoods = listFoodsOneSection
+        }
+    }
+    
+    func actionSearchBarCancelButtonClicked() {
+        searching = false
+        filterListFoods.removeAll()
+    }
+    
+}
+
+// MARK: - UISearchResultsUpdating, UISearchBarDelegate
+extension HomeViewController: UISearchResultsUpdating, UISearchBarDelegate {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchText = searchController.searchBar.text!
+        updateSearchResultsTable(searchText: searchText)
+        tableFoods.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        actionSearchBarCancelButtonClicked()
+        tableFoods.reloadData()
+    }
+    
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        createHeader(section: section, title: listFoods[section].type)
+        if searching {
+            return UIView()
+        } else {
+            return createHeader(section: section, title: listFoods[section].type)
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -137,7 +231,27 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        createCell(tableView: tableView, indexPath: indexPath)
+        if searching {
+            return createCellFilter(tableView: tableView, indexPath: indexPath)
+        } else {
+            return createCell(tableView: tableView, indexPath: indexPath)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if searching {
+            guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FoodDetailViewController") as? FoodDetailViewController else { return }
+            vc.food = filterListFoods[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if searching {
+            return 0
+        } else {
+            return UITableView.automaticDimension
+        }
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {

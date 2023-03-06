@@ -31,6 +31,15 @@
 		2F548FFE29B5C30B001B9B08 /* FoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F548FFD29B5C30B001B9B08 /* FoodMapViewController.swift */; };
 		2F548FFF29B5C30B001B9B08 /* FoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F548FFD29B5C30B001B9B08 /* FoodMapViewController.swift */; };
 		2F54900029B5C30B001B9B08 /* FoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F548FFD29B5C30B001B9B08 /* FoodMapViewController.swift */; };
+		2F5C9B1129B61DE100DFF674 /* HomeFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B0F29B61DE100DFF674 /* HomeFoodTableViewCell.swift */; };
+		2F5C9B1229B61DE100DFF674 /* HomeFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B0F29B61DE100DFF674 /* HomeFoodTableViewCell.swift */; };
+		2F5C9B1329B61DE100DFF674 /* HomeFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B0F29B61DE100DFF674 /* HomeFoodTableViewCell.swift */; };
+		2F5C9B1429B61DE100DFF674 /* HomeFoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1029B61DE100DFF674 /* HomeFoodTableViewCell.xib */; };
+		2F5C9B1529B61DE100DFF674 /* HomeFoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1029B61DE100DFF674 /* HomeFoodTableViewCell.xib */; };
+		2F5C9B1629B61DE100DFF674 /* HomeFoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1029B61DE100DFF674 /* HomeFoodTableViewCell.xib */; };
+		2F5C9B1829B61F5800DFF674 /* WebImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1729B61F5800DFF674 /* WebImageManager.swift */; };
+		2F5C9B1929B61F5800DFF674 /* WebImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1729B61F5800DFF674 /* WebImageManager.swift */; };
+		2F5C9B1A29B61F5800DFF674 /* WebImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1729B61F5800DFF674 /* WebImageManager.swift */; };
 		2F5F68D429B4522900A6FE54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68D329B4522900A6FE54 /* AppDelegate.swift */; };
 		2F5F68D629B4522900A6FE54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68D529B4522900A6FE54 /* SceneDelegate.swift */; };
 		2F5F68D829B4522900A6FE54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68D729B4522900A6FE54 /* ViewController.swift */; };
@@ -111,6 +120,9 @@
 		2F548FF429B5BEF4001B9B08 /* FoodDetailMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailMapTableViewCell.swift; sourceTree = "<group>"; };
 		2F548FF529B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodDetailMapTableViewCell.xib; sourceTree = "<group>"; };
 		2F548FFD29B5C30B001B9B08 /* FoodMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapViewController.swift; sourceTree = "<group>"; };
+		2F5C9B0F29B61DE100DFF674 /* HomeFoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFoodTableViewCell.swift; sourceTree = "<group>"; };
+		2F5C9B1029B61DE100DFF674 /* HomeFoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFoodTableViewCell.xib; sourceTree = "<group>"; };
+		2F5C9B1729B61F5800DFF674 /* WebImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageManager.swift; sourceTree = "<group>"; };
 		2F5F68D029B4522900A6FE54 /* YapeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5F68D329B4522900A6FE54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F5F68D529B4522900A6FE54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -262,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				2F5F691029B453E300A6FE54 /* Constants.swift */,
+				2F5C9B1729B61F5800DFF674 /* WebImageManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -370,6 +383,8 @@
 				2F548FDD29B5A470001B9B08 /* Collection */,
 				2F8C278129B4589300669871 /* HomeTableViewCell.swift */,
 				2F8C278229B4589300669871 /* HomeTableViewCell.xib */,
+				2F5C9B0F29B61DE100DFF674 /* HomeFoodTableViewCell.swift */,
+				2F5C9B1029B61DE100DFF674 /* HomeFoodTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -501,6 +516,7 @@
 				2F8C278F29B4606700669871 /* HomeFoodHeaderView.xib in Resources */,
 				2F8C278629B4589300669871 /* HomeTableViewCell.xib in Resources */,
 				2F5F68DB29B4522900A6FE54 /* Main.storyboard in Resources */,
+				2F5C9B1429B61DE100DFF674 /* HomeFoodTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +526,7 @@
 			files = (
 				2F548FE429B5A4D2001B9B08 /* FoodCollectionViewCell.xib in Resources */,
 				2F548FF229B5BB56001B9B08 /* FoodDetailDescriptionTableViewCell.xib in Resources */,
+				2F5C9B1529B61DE100DFF674 /* HomeFoodTableViewCell.xib in Resources */,
 				2F8C279029B4606700669871 /* HomeFoodHeaderView.xib in Resources */,
 				2F548FFA29B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib in Resources */,
 				2F8C278729B4589300669871 /* HomeTableViewCell.xib in Resources */,
@@ -522,6 +539,7 @@
 			files = (
 				2F548FE529B5A4D2001B9B08 /* FoodCollectionViewCell.xib in Resources */,
 				2F548FF329B5BB56001B9B08 /* FoodDetailDescriptionTableViewCell.xib in Resources */,
+				2F5C9B1629B61DE100DFF674 /* HomeFoodTableViewCell.xib in Resources */,
 				2F8C279129B4606700669871 /* HomeFoodHeaderView.xib in Resources */,
 				2F548FFB29B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib in Resources */,
 				2F8C278829B4589300669871 /* HomeTableViewCell.xib in Resources */,
@@ -536,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F5F693729B4560000A6FE54 /* BaseViewController.swift in Sources */,
+				2F5C9B1129B61DE100DFF674 /* HomeFoodTableViewCell.swift in Sources */,
 				2F5F692429B4546000A6FE54 /* FoodRepository.swift in Sources */,
 				2F8C278329B4589300669871 /* HomeTableViewCell.swift in Sources */,
 				2F5F692C29B4549B00A6FE54 /* FoodDataSource.swift in Sources */,
@@ -546,6 +565,7 @@
 				2F548FE029B5A4D2001B9B08 /* FoodCollectionViewCell.swift in Sources */,
 				2F5F691C29B4544100A6FE54 /* FoodInteractor.swift in Sources */,
 				2F5F691129B453E300A6FE54 /* Constants.swift in Sources */,
+				2F5C9B1829B61F5800DFF674 /* WebImageManager.swift in Sources */,
 				2F5F68D829B4522900A6FE54 /* ViewController.swift in Sources */,
 				2F5F690D29B453B900A6FE54 /* Food.swift in Sources */,
 				2F548FF629B5BEF4001B9B08 /* FoodDetailMapTableViewCell.swift in Sources */,
@@ -562,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5C9B1929B61F5800DFF674 /* WebImageManager.swift in Sources */,
 				2F5F691929B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */,
 				2F548FFF29B5C30B001B9B08 /* FoodMapViewController.swift in Sources */,
 				2F5F68EB29B4522B00A6FE54 /* YapeFoodTests.swift in Sources */,
@@ -578,6 +599,7 @@
 				2F5F692129B4545200A6FE54 /* FoodRepositoryProtocol.swift in Sources */,
 				2F5F690E29B453B900A6FE54 /* Food.swift in Sources */,
 				2F548FF729B5BEF4001B9B08 /* FoodDetailMapTableViewCell.swift in Sources */,
+				2F5C9B1229B61DE100DFF674 /* HomeFoodTableViewCell.swift in Sources */,
 				2F8C278C29B45F9C00669871 /* HomeFoodHeaderView.swift in Sources */,
 				2F5F691229B453E300A6FE54 /* Constants.swift in Sources */,
 			);
@@ -590,6 +612,7 @@
 				2F5F68F729B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift in Sources */,
 				2F5F692229B4545200A6FE54 /* FoodRepositoryProtocol.swift in Sources */,
 				2F8C278529B4589300669871 /* HomeTableViewCell.swift in Sources */,
+				2F5C9B1A29B61F5800DFF674 /* WebImageManager.swift in Sources */,
 				2F548FEA29B5B527001B9B08 /* FoodDetailViewController.swift in Sources */,
 				2F5F692A29B4547000A6FE54 /* FoodDataSourceProtocol.swift in Sources */,
 				2F5F68F529B4522B00A6FE54 /* YapeFoodUITests.swift in Sources */,
@@ -597,6 +620,7 @@
 				2F5F693929B4560000A6FE54 /* BaseViewController.swift in Sources */,
 				2F5F690F29B453B900A6FE54 /* Food.swift in Sources */,
 				2F5F691329B453E300A6FE54 /* Constants.swift in Sources */,
+				2F5C9B1329B61DE100DFF674 /* HomeFoodTableViewCell.swift in Sources */,
 				2F548FF029B5BB56001B9B08 /* FoodDetailDescriptionTableViewCell.swift in Sources */,
 				2F5F693329B455E500A6FE54 /* HomeViewController.swift in Sources */,
 				2F54900029B5C30B001B9B08 /* FoodMapViewController.swift in Sources */,
