@@ -28,6 +28,9 @@
 		2F548FF929B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F548FF529B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib */; };
 		2F548FFA29B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F548FF529B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib */; };
 		2F548FFB29B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F548FF529B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib */; };
+		2F548FFE29B5C30B001B9B08 /* FoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F548FFD29B5C30B001B9B08 /* FoodMapViewController.swift */; };
+		2F548FFF29B5C30B001B9B08 /* FoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F548FFD29B5C30B001B9B08 /* FoodMapViewController.swift */; };
+		2F54900029B5C30B001B9B08 /* FoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F548FFD29B5C30B001B9B08 /* FoodMapViewController.swift */; };
 		2F5F68D429B4522900A6FE54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68D329B4522900A6FE54 /* AppDelegate.swift */; };
 		2F5F68D629B4522900A6FE54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68D529B4522900A6FE54 /* SceneDelegate.swift */; };
 		2F5F68D829B4522900A6FE54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68D729B4522900A6FE54 /* ViewController.swift */; };
@@ -107,6 +110,7 @@
 		2F548FED29B5BB56001B9B08 /* FoodDetailDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodDetailDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		2F548FF429B5BEF4001B9B08 /* FoodDetailMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailMapTableViewCell.swift; sourceTree = "<group>"; };
 		2F548FF529B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodDetailMapTableViewCell.xib; sourceTree = "<group>"; };
+		2F548FFD29B5C30B001B9B08 /* FoodMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapViewController.swift; sourceTree = "<group>"; };
 		2F5F68D029B4522900A6FE54 /* YapeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5F68D329B4522900A6FE54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F5F68D529B4522900A6FE54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +193,14 @@
 				2F548FF529B5BEF4001B9B08 /* FoodDetailMapTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		2F548FFC29B5C2FB001B9B08 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2F548FFD29B5C30B001B9B08 /* FoodMapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		2F5F68C729B4522900A6FE54 = {
@@ -274,6 +286,7 @@
 		2F5F690929B4537200A6FE54 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2F548FFC29B5C2FB001B9B08 /* Map */,
 				2F548FE629B5B515001B9B08 /* Detail */,
 				2F5F692F29B455BA00A6FE54 /* Home */,
 				2F5F68D729B4522900A6FE54 /* ViewController.swift */,
@@ -529,6 +542,7 @@
 				2F548FE829B5B527001B9B08 /* FoodDetailViewController.swift in Sources */,
 				2F5F691829B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */,
 				2F5F692029B4545200A6FE54 /* FoodRepositoryProtocol.swift in Sources */,
+				2F548FFE29B5C30B001B9B08 /* FoodMapViewController.swift in Sources */,
 				2F548FE029B5A4D2001B9B08 /* FoodCollectionViewCell.swift in Sources */,
 				2F5F691C29B4544100A6FE54 /* FoodInteractor.swift in Sources */,
 				2F5F691129B453E300A6FE54 /* Constants.swift in Sources */,
@@ -549,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F5F691929B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */,
+				2F548FFF29B5C30B001B9B08 /* FoodMapViewController.swift in Sources */,
 				2F5F68EB29B4522B00A6FE54 /* YapeFoodTests.swift in Sources */,
 				2F5F693829B4560000A6FE54 /* BaseViewController.swift in Sources */,
 				2F548FE929B5B527001B9B08 /* FoodDetailViewController.swift in Sources */,
@@ -584,6 +599,7 @@
 				2F5F691329B453E300A6FE54 /* Constants.swift in Sources */,
 				2F548FF029B5BB56001B9B08 /* FoodDetailDescriptionTableViewCell.swift in Sources */,
 				2F5F693329B455E500A6FE54 /* HomeViewController.swift in Sources */,
+				2F54900029B5C30B001B9B08 /* FoodMapViewController.swift in Sources */,
 				2F548FE229B5A4D2001B9B08 /* FoodCollectionViewCell.swift in Sources */,
 				2F8C278D29B45F9C00669871 /* HomeFoodHeaderView.swift in Sources */,
 				2F5F691A29B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */,
