@@ -16,6 +16,8 @@ class HomeViewController: BaseViewController {
     
     let interactor = FoodInteractor(foodRepository: FoodRepository())
     
+    var refreshControl: UIRefreshControl?
+    
     var listFoods = [FoodCategory]()
     var listFoodsOneSection = [Foods]()
     var filterListFoods = [Foods]()
@@ -40,6 +42,7 @@ extension HomeViewController {
     func setupView() {
         setupNavigationController()
         setupSearchController()
+        setupRefreshControl()
         setupTable()
     }
     
@@ -66,7 +69,13 @@ extension HomeViewController {
         searchController.searchBar.placeholder = "Busque una comida"
         searchController.hidesNavigationBarDuringPresentation = false
         view.endEditing(true)
-        
+    }
+    
+    func setupRefreshControl() {
+        refreshControl = UIRefreshControl()
+        refreshControl?.tintColor = .black
+        refreshControl?.addTarget(self, action: #selector(refreshFoods), for: .valueChanged)
+        tableFoods.refreshControl = refreshControl
     }
     
     func setupTable() {
@@ -119,9 +128,11 @@ extension HomeViewController {
 
             DispatchQueue.main.async {
                 self.tableFoods.reloadData()
+                self.refreshControl?.endRefreshing()
             }
         } completionError: {
             self.hideSpinner()
+            self.refreshControl?.endRefreshing()
             let alert = UIAlertController(title: "Error", message: "Error al cargar el listado de comidas", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Reintentar", style: .default, handler: { action in
                 self.getListFoods()
@@ -256,6 +267,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+}
+
+// MARK: - @objc
+extension HomeViewController {
+    
+    @objc func refreshFoods() {
+        self.getListFoods()
     }
     
 }
