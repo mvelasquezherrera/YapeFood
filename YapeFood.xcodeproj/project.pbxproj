@@ -39,7 +39,10 @@
 		2F5C9B1629B61DE100DFF674 /* HomeFoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1029B61DE100DFF674 /* HomeFoodTableViewCell.xib */; };
 		2F5C9B1829B61F5800DFF674 /* WebImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1729B61F5800DFF674 /* WebImageManager.swift */; };
 		2F5C9B1929B61F5800DFF674 /* WebImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1729B61F5800DFF674 /* WebImageManager.swift */; };
-		2F5C9B1A29B61F5800DFF674 /* WebImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1729B61F5800DFF674 /* WebImageManager.swift */; };
+		2F5C9B1D29B6502D00DFF674 /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1C29B6502D00DFF674 /* HomeViewControllerTest.swift */; };
+		2F5C9B1E29B6548900DFF674 /* WebImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C9B1729B61F5800DFF674 /* WebImageManager.swift */; };
+		2F5C9B2129B6551200DFF674 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2F5C9B2029B6551200DFF674 /* SDWebImage */; };
+		2F5C9B2329B6553000DFF674 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2F5C9B2229B6553000DFF674 /* SDWebImage */; };
 		2F5F68D429B4522900A6FE54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68D329B4522900A6FE54 /* AppDelegate.swift */; };
 		2F5F68D629B4522900A6FE54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68D529B4522900A6FE54 /* SceneDelegate.swift */; };
 		2F5F68D829B4522900A6FE54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5F68D729B4522900A6FE54 /* ViewController.swift */; };
@@ -123,6 +126,7 @@
 		2F5C9B0F29B61DE100DFF674 /* HomeFoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFoodTableViewCell.swift; sourceTree = "<group>"; };
 		2F5C9B1029B61DE100DFF674 /* HomeFoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFoodTableViewCell.xib; sourceTree = "<group>"; };
 		2F5C9B1729B61F5800DFF674 /* WebImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageManager.swift; sourceTree = "<group>"; };
+		2F5C9B1C29B6502D00DFF674 /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
 		2F5F68D029B4522900A6FE54 /* YapeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YapeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5F68D329B4522900A6FE54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F5F68D529B4522900A6FE54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5C9B2329B6553000DFF674 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5C9B2129B6551200DFF674 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +221,21 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		2F5C9B1B29B6500600DFF674 /* xctest */ = {
+			isa = PBXGroup;
+			children = (
+				2F5C9B1C29B6502D00DFF674 /* HomeViewControllerTest.swift */,
+			);
+			path = xctest;
+			sourceTree = "<group>";
+		};
+		2F5C9B1F29B6551200DFF674 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F5F68C729B4522900A6FE54 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +243,7 @@
 				2F5F68E929B4522B00A6FE54 /* YapeFoodTests */,
 				2F5F68F329B4522B00A6FE54 /* YapeFoodUITests */,
 				2F5F68D129B4522900A6FE54 /* Products */,
+				2F5C9B1F29B6551200DFF674 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,6 +278,7 @@
 		2F5F68E929B4522B00A6FE54 /* YapeFoodTests */ = {
 			isa = PBXGroup;
 			children = (
+				2F5C9B1B29B6500600DFF674 /* xctest */,
 				2F5F68EA29B4522B00A6FE54 /* YapeFoodTests.swift */,
 			);
 			path = YapeFoodTests;
@@ -435,6 +458,9 @@
 				2F5F68E829B4522B00A6FE54 /* PBXTargetDependency */,
 			);
 			name = YapeFoodTests;
+			packageProductDependencies = (
+				2F5C9B2229B6553000DFF674 /* SDWebImage */,
+			);
 			productName = YapeFoodTests;
 			productReference = 2F5F68E629B4522B00A6FE54 /* YapeFoodTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -453,6 +479,9 @@
 				2F5F68F229B4522B00A6FE54 /* PBXTargetDependency */,
 			);
 			name = YapeFoodUITests;
+			packageProductDependencies = (
+				2F5C9B2029B6551200DFF674 /* SDWebImage */,
+			);
 			productName = YapeFoodUITests;
 			productReference = 2F5F68F029B4522B00A6FE54 /* YapeFoodUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -586,6 +615,7 @@
 				2F5F691929B4543000A6FE54 /* FoodInteractorProtocol.swift in Sources */,
 				2F548FFF29B5C30B001B9B08 /* FoodMapViewController.swift in Sources */,
 				2F5F68EB29B4522B00A6FE54 /* YapeFoodTests.swift in Sources */,
+				2F5C9B1D29B6502D00DFF674 /* HomeViewControllerTest.swift in Sources */,
 				2F5F693829B4560000A6FE54 /* BaseViewController.swift in Sources */,
 				2F548FE929B5B527001B9B08 /* FoodDetailViewController.swift in Sources */,
 				2F5F692D29B4549B00A6FE54 /* FoodDataSource.swift in Sources */,
@@ -612,7 +642,7 @@
 				2F5F68F729B4522B00A6FE54 /* YapeFoodUITestsLaunchTests.swift in Sources */,
 				2F5F692229B4545200A6FE54 /* FoodRepositoryProtocol.swift in Sources */,
 				2F8C278529B4589300669871 /* HomeTableViewCell.swift in Sources */,
-				2F5C9B1A29B61F5800DFF674 /* WebImageManager.swift in Sources */,
+				2F5C9B1E29B6548900DFF674 /* WebImageManager.swift in Sources */,
 				2F548FEA29B5B527001B9B08 /* FoodDetailViewController.swift in Sources */,
 				2F5F692A29B4547000A6FE54 /* FoodDataSourceProtocol.swift in Sources */,
 				2F5F68F529B4522B00A6FE54 /* YapeFoodUITests.swift in Sources */,
@@ -967,6 +997,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2F5C9B2029B6551200DFF674 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F5F690329B4531400A6FE54 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		2F5C9B2229B6553000DFF674 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F5F690329B4531400A6FE54 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		2F5F690429B4531400A6FE54 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2F5F690329B4531400A6FE54 /* XCRemoteSwiftPackageReference "SDWebImage" */;
