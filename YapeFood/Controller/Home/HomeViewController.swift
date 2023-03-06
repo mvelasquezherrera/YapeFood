@@ -113,6 +113,7 @@ extension HomeViewController {
     func createCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as! HomeTableViewCell
         cell.selectionStyle = .none
+        cell.parentVC = self
         cell.section = indexPath.section
         cell.foods = listFoods[indexPath.section].foods
         return cell

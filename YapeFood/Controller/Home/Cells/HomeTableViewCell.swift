@@ -15,6 +15,8 @@ class HomeTableViewCell: UITableViewCell {
     static func nib() -> UINib {
         return UINib(nibName: "HomeTableViewCell", bundle: nil)
     }
+    
+    var parentVC = UIViewController()
 
     var foods = [Foods]() {
         didSet {
@@ -76,6 +78,12 @@ extension HomeTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         createCell(collectionView: collectionView, indexPath: indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FoodDetailViewController") as? FoodDetailViewController else { return }
+        vc.food = foods[indexPath.row]
+        parentVC.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

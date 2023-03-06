@@ -52,6 +52,70 @@
             </objects>
             <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
         </scene>
+        <!--Food Detail View Controller-->
+        <scene sceneID="QoM-7l-zxG">
+            <objects>
+                <viewController storyboardIdentifier="FoodDetailViewController" id="M51-QY-reg" customClass="FoodDetailViewController" customModule="YapeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zHJ-1c-QAK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KDi-o8-nAp">
+                                <rect key="frame" x="0.0" y="59" width="393" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4li-a0-K1G"/>
+                                </constraints>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohz-zw-FHa">
+                                <rect key="frame" x="0.0" y="199" width="393" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toh-0l-7FT">
+                                        <rect key="frame" x="8" y="4" width="377" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="toh-0l-7FT" firstAttribute="leading" secondItem="Ohz-zw-FHa" secondAttribute="leading" constant="8" id="8pz-Vo-6em"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="OGG-w9-BzG"/>
+                                    <constraint firstAttribute="trailing" secondItem="toh-0l-7FT" secondAttribute="trailing" constant="8" id="SBe-Ou-xsB"/>
+                                    <constraint firstAttribute="bottom" secondItem="toh-0l-7FT" secondAttribute="bottom" constant="4" id="o3A-S0-Z5O"/>
+                                    <constraint firstItem="toh-0l-7FT" firstAttribute="top" secondItem="Ohz-zw-FHa" secondAttribute="top" constant="4" id="wji-EL-30b"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DNp-uZ-bib">
+                                <rect key="frame" x="0.0" y="259" width="393" height="559"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jx7-js-2KE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DNp-uZ-bib" firstAttribute="leading" secondItem="Jx7-js-2KE" secondAttribute="leading" id="Ki2-O5-TWK"/>
+                            <constraint firstItem="Ohz-zw-FHa" firstAttribute="bottom" secondItem="KDi-o8-nAp" secondAttribute="bottom" id="NV2-Kz-qeD"/>
+                            <constraint firstItem="Jx7-js-2KE" firstAttribute="trailing" secondItem="KDi-o8-nAp" secondAttribute="trailing" id="OUx-UC-mgf"/>
+                            <constraint firstItem="KDi-o8-nAp" firstAttribute="leading" secondItem="Jx7-js-2KE" secondAttribute="leading" id="PLT-WM-i4V"/>
+                            <constraint firstItem="Jx7-js-2KE" firstAttribute="bottom" secondItem="DNp-uZ-bib" secondAttribute="bottom" id="UyX-q3-BHj"/>
+                            <constraint firstItem="DNp-uZ-bib" firstAttribute="top" secondItem="KDi-o8-nAp" secondAttribute="bottom" id="XKJ-K7-3Df"/>
+                            <constraint firstItem="Ohz-zw-FHa" firstAttribute="leading" secondItem="Jx7-js-2KE" secondAttribute="leading" id="dge-Fs-U0n"/>
+                            <constraint firstItem="Jx7-js-2KE" firstAttribute="trailing" secondItem="Ohz-zw-FHa" secondAttribute="trailing" id="eh4-mu-Mhw"/>
+                            <constraint firstItem="KDi-o8-nAp" firstAttribute="top" secondItem="Jx7-js-2KE" secondAttribute="top" id="glB-kn-s5l"/>
+                            <constraint firstItem="Jx7-js-2KE" firstAttribute="trailing" secondItem="DNp-uZ-bib" secondAttribute="trailing" id="wli-f3-1U3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgFood" destination="KDi-o8-nAp" id="AXr-tZ-dMY"/>
+                        <outlet property="lblFood" destination="toh-0l-7FT" id="fNY-bx-CKw"/>
+                        <outlet property="tableInfo" destination="DNp-uZ-bib" id="Ogg-hg-n5U"/>
+                        <outlet property="viewContentTitle" destination="Ohz-zw-FHa" id="iQt-to-ty1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVs-E1-T22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="-2"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="zHv-mA-VbO">
             <objects>
