@@ -34,8 +34,10 @@ extension HomeFoodTableViewCell {
     func setupCell(nameImg: String, nameFood: String) {
         viewContent.backgroundColor = .white
         imgFood.contentMode = .scaleAspectFill
-        WebImageManager.downloadImage(nameImg: nameImg) { imageDownloaded in
-            self.imgFood.image = imageDownloaded
+        if !nameImg.isEmpty {
+            WebImageManager.downloadImage(nameImg: nameImg) { imageDownloaded in
+                self.imgFood.image = imageDownloaded
+            }
         }
         lblFood.text = nameFood
         lblFood.textColor = .black

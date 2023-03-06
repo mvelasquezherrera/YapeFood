@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SDWebImage
 
 class FoodDetailViewController: BaseViewController {
 
@@ -46,7 +45,9 @@ extension FoodDetailViewController {
     
     func setupHeader() {
         if let nameImg = food?.image {
-            downloadImage(nameImg: nameImg)
+            WebImageManager.downloadImage(nameImg: nameImg) { imageDownloaded in
+                self.imgFood.image = imageDownloaded
+            }
         }
         imgFood.contentMode = .scaleAspectFill
     }
@@ -65,18 +66,6 @@ extension FoodDetailViewController {
         }
 
         tableInfo.reloadData()
-    }
-    
-    func downloadImage(nameImg: String) {
-        SDWebImageManager.shared.loadImage(with: URL(string: nameImg), options: .continueInBackground, progress: nil) { image, data, error, cacheType, isFinished, url in
-            if error == nil {
-                guard let imageDownloaded = image else { return }
-                self.imgFood.image = imageDownloaded
-            } else {
-                // Error al descargar la imagen
-                self.imgFood.image = UIImage()
-            }
-        }
     }
     
     func createHeader(section: Int, title: String) -> UIView {
