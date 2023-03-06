@@ -11,8 +11,8 @@ public class FoodRepository {
     
     let foodDS: FoodDataSourceProtocol
     
-    init(foodDS: FoodDataSourceProtocol) {
-        self.foodDS = foodDS
+    init() {
+        self.foodDS = FoodDataSource()
     }
     
 }
